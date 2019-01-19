@@ -6,4 +6,5 @@ matrix:
  - dotnet: 2.1.502
    mono: none
  - mono: latest
-
+script:
+ - dotnet restore
