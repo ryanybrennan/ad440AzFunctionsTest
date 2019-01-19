@@ -2,8 +2,8 @@ language: csharp
 solution: ad440demoApi.sln
 
 matrix:
-	inclue:
-	 - dotnet: 2.1.502
-	   mono: none
-	 - mono: latest
+ include:
+ - dotnet: 2.1.502
+   mono: none
+ - mono: latest
 
