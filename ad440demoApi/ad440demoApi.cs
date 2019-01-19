@@ -26,7 +26,7 @@ namespace ad440demoApi
             name = name ?? data?.name;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"Well hello there, {name}")
+                ? (ActionResult)new OkObjectResult($"Well, {name}, have the lambs stopped screaming?")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
     }
