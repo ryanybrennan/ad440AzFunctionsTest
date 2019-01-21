@@ -7,6 +7,43 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.22" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Net.Http.Formatting.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Buffers.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.AppContext.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Collections.Concurrent.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.ComponentModel.Annotations.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Collections.NonGeneric.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Diagnostics.DiagnosticSource.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Linq.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Dynamic.Runtime.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Memory.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Numerics.Vectors.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.IO.FileSystem.Primitives.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.ObjectModel.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Private.DataContractSerialization.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Reflection.Emit.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Reflection.Emit.ILGeneration.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Linq.Expressions.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Reflection.TypeExtensions.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Reflection.Emit.Lightweight.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Resources.Reader.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Runtime.Loader.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Runtime.Serialization.Xml.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Runtime.Serialization.Primitives.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Text.Encodings.Web.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Text.RegularExpressions.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Threading.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Threading.Tasks.Dataflow.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Threading.Thread.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Threading.Tasks.Extensions.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Threading.ThreadPool.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Xml.ReaderWriter.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Xml.XmlDocument.dll" />
+    <None Remove="obj\Release\netstandard2.0\PubTmp\Out\bin\System.Xml.XmlSerializer.dll" />
+    <None Remove="Properties\PublishProfiles\storage2349 - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
