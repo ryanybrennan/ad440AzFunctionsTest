@@ -1,6 +1,6 @@
 language: csharp
 solution: ad440demoApi.sln
-mono: none
+mono: latest
 dotnet: 2.1.502
 script:
  - msbuild /p:Configuration=Release ad440demoApi.sln
