@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web.Http;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs.Host;
-using NUnit.Framework;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions.Internal;
 using System.Collections.Generic;
-using System.Text;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Primitives;
@@ -24,20 +17,20 @@ namespace ad440demoApi
         private readonly ILogger logger = TestFactory.CreateLogger();
 
         [Fact]
-        public async void Http_trigger_should_return_known_string()
+        public async Task Http_trigger_should_return_known_string()
         {
             var request = TestFactory.CreateHttpRequest("name", "Bill");
             var response = (OkObjectResult)await ad440demoApi.Run(request, logger);
-            Xunit.Assert.Equal("Well, Bill, have the lambs stopped screaming?", response.Value);
+            Assert.Equal("Well, Bill, have the lambs stopped screaming?", response.Value);
         }
 
-        [Xunit.Theory]
+        [Theory]
         [MemberData(nameof(TestFactory.Data), MemberType = typeof(TestFactory))]
-        public async void Http_trigger_should_return_known_string_from_member_data(string queryStringKey, string queryStringValue)
+        public async Task Http_trigger_should_return_known_string_from_member_data(string queryStringKey, string queryStringValue)
         {
             var request = TestFactory.CreateHttpRequest(queryStringKey, queryStringValue);
             var response = (OkObjectResult)await ad440demoApi.Run(request, logger);
-            Xunit.Assert.Equal($"Well, {queryStringValue}, have the lambs stopped screaming?", response.Value);
+            Assert.Equal($"Well, {queryStringValue}, have the lambs stopped screaming?", response.Value);
         }
 
         [Fact]
@@ -46,7 +39,7 @@ namespace ad440demoApi
             var logger = (ListLogger)TestFactory.CreateLogger(LoggerTypes.List);
             await ad440demoApi.Run(null, logger);
             var msg = logger.Logs[0];
-            Xunit.Assert.Contains("C# Timer trigger function executed at", msg);
+            Assert.Contains("C# Timer trigger function executed at", msg);
         }
 
     }
