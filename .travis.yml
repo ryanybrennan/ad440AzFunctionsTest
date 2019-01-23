@@ -4,6 +4,6 @@ mono: none
 dotnet: 2.1.502
 script:
   - msbuild /p:Configuration=Release ad440demoApi.sln
-  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./ad440demoApi.Tests/bin/Release/ad440demoApi.Tests.dll
+  - mono ./packages/xunit.runners.*/tools/xunit.console.clr4.exe ./ad440demoApi.Tests/bin/Release/ad440demoApi.Tests.dll
  - dotnet restore
  - dotnet test
