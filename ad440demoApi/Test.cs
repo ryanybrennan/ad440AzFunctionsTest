@@ -28,7 +28,7 @@ namespace ad440demoApi
         {
             var request = TestFactory.CreateHttpRequest("name", "Bill");
             var response = (OkObjectResult)await ad440demoApi.Run(request, logger);
-            Xunit.Assert.Equal("Well, Bill, have the lambds stopped screaming?", response.Value);
+            Xunit.Assert.Equal("Well, Bill, have the lambs stopped screaming?", response.Value);
         }
 
         [Xunit.Theory]
