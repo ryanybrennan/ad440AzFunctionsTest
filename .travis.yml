@@ -6,5 +6,4 @@ mono: latest
 dotnet: 2.1.502
 script:
  - msbuild /p:Configuration=Release ad440demoApi.sln
- - Test.cs
  - dotnet restore
