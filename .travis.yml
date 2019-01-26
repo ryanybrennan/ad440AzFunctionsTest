@@ -7,3 +7,5 @@ dotnet: 2.1.502
 script:
  - msbuild /p:Configuration=Release ad440demoApi.sln
  - dotnet restore
+deploy:
+- provider: azure_web_apps
