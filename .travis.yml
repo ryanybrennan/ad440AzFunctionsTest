@@ -1,5 +1,8 @@
+sudo: required
 language: csharp
 solution: ad440demoApi.sln
+before_install:
+ - sudo apt-get install azure-cli 
 install:
  - nuget restore ad440demoApi.sln
 mono: latest
