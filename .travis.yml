@@ -14,6 +14,6 @@ dotnet: 2.1.502
 script:
  - msbuild /p:Configuration=Release ad440demoApi.sln
  - dotnet restore
- - az login --service-principal --username $AZURE_WA_USERNAME --password $AZURE_WA_PASSWORD --tenant $AZ_TENANT_ID
- - az account get-access-token -s $AZ_SUBCSCRIPTION_ID
+ - az login --service-principal --username $AZ_APP_URL --password $AZURE_WA_PASSWORD --tenant $AZ_TENANT_ID
+ - az account get-access-token -s $AZ_SUBSCRIPTION_ID
  - func azure functionapp publish $AZ_FUNCTIONS_APP_NAME --build-native-deps --force
