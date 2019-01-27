@@ -16,4 +16,4 @@ script:
  - dotnet restore
  - az login --service-principal --username $AZ_APP_URL --password $AZURE_WA_PASSWORD --tenant $AZ_TENANT_ID
  - az account get-access-token -s $AZ_SUBSCRIPTION_ID
- - az functionapp publish $AZ_FUNCTIONS_APP_NAME --build-native-deps --force
+ - az functionapp deployment --resource-group  $AZ_FUNCTIONS_APP_NAME --build-native-deps --force
