@@ -1,6 +1,5 @@
 sudo: required
-language: csharp
-solution: ad440demoApi.sln
+language: generic
 services:
  - docker
 addons:
